@@ -25,3 +25,12 @@ spec:
           value: sonar
         - name: MYSQL_PASSWORD
           value: sonar
+        volumeMounts:
+         - name: mysql-data
+           mountPath: /var/lib/mysql
+      volumes:
+      - name: mysql-data
+        nfs:
+          server: ""
+          path: "/sonarqube/mysql"
+          readOnly: false
