@@ -6,7 +6,7 @@
       /sonarqube/mysql *(rw,sync,no_root_squash)
       /sonarqube/data *(rw,sync,no_root_squash)
 
-    sudo mkdir -p /sonarqube/mysql; sudo mkdir -p /sonarqube/data
+    sudo mkdir -p /sonarqube/mysql; sudo mkdir -p /sonarqube/data; sudo mkdir -p sonarqube/extensions
 
     sudo chmod -R 755 /sonarqube
 
